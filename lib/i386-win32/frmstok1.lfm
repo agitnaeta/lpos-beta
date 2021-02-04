@@ -1,0 +1,319 @@
+object frmStok: TfrmStok
+  Left = 487
+  Height = 240
+  Top = 165
+  Width = 472
+  BorderStyle = bsToolWindow
+  Caption = 'Data Stok'
+  ClientHeight = 240
+  ClientWidth = 472
+  OnDeactivate = FormDeactivate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object Shape1: TShape
+    Left = 0
+    Height = 152
+    Top = 40
+    Width = 472
+    Brush.Color = clDefault
+    Pen.Color = clBlue
+  end
+  object Edit1: TEdit
+    Left = 152
+    Height = 23
+    Top = 56
+    Width = 270
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 13
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Label1: TLabel
+    Left = 53
+    Height = 15
+    Top = 64
+    Width = 72
+    Caption = 'Kode Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 80
+    Height = 15
+    Top = 88
+    Width = 46
+    Caption = 'Barcode'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 48
+    Height = 15
+    Top = 112
+    Width = 77
+    Caption = 'Nama Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 86
+    Height = 15
+    Top = 160
+    Width = 39
+    Caption = 'Satuan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 57
+    Height = 15
+    Top = 136
+    Width = 68
+    Caption = 'Jumlah Stok'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 152
+    Height = 23
+    Top = 80
+    Width = 270
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 35
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    Text = 'edit2'
+  end
+  object Edit3: TEdit
+    Left = 152
+    Height = 23
+    Top = 104
+    Width = 270
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 50
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+    Text = 'edit3'
+  end
+  object Edit4: TEdit
+    Left = 152
+    Height = 23
+    Top = 128
+    Width = 96
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnKeyPress = Edit4KeyPress
+    ParentFont = False
+    TabOrder = 3
+    Text = 'Edit4'
+  end
+  object Edit5: TEdit
+    Left = 152
+    Height = 23
+    Top = 152
+    Width = 270
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 7
+    Text = 'Edit5'
+  end
+  object Shape2: TShape
+    Left = 0
+    Height = 40
+    Top = 200
+    Width = 472
+    Brush.Color = clDefault
+    Pen.Color = clGray
+  end
+  object Shape3: TShape
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 472
+    Brush.Color = 16777166
+    Pen.Color = clSilver
+  end
+  object Label7: TLabel
+    Left = 128
+    Height = 19
+    Top = 8
+    Width = 215
+    Caption = 'DATA STOK BARANG'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -16
+    Font.Name = 'Engravers MT'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object cmd_batal: TBitBtn
+    Left = 368
+    Height = 25
+    Top = 208
+    Width = 96
+    Caption = '&Cancel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000031DE0031DE0000000031DE0031DE00000000000000000000000000
+      00000000000000000000000000000000000031DE0031DE0000000000000031DE
+      0031DE0031DE0000000000000000000000000000000000000000000000000031
+      DE0031DE0000000000000000000031DE0031DE0031DE0031DE00000000000000
+      00000000000000000000000031DE0031DE000000000000000000000000000000
+      0031EF0031DE0031DE0031DE0000000000000000000000000031DE0031DE0000
+      000000000000000000000000000000000000000000000031DE0031DE0031DE00
+      00000031DE0031DE0031DE000000000000000000000000000000000000000000
+      0000000000000000000031DE0031E70031E70031E70031DE0000000000000000
+      000000000000000000000000000000000000000000000000000000000031E700
+      31E70031EF000000000000000000000000000000000000000000000000000000
+      0000000000000000000031DE0031EF0031E70031EF0031F70000000000000000
+      000000000000000000000000000000000000000000000031F70031EF0031E700
+      00000000000031F70031F7000000000000000000000000000000000000000000
+      0000000031FF0031EF0031F70000000000000000000000000031FF0031F70000
+      000000000000000000000000000000000031F70031F70031FF00000000000000
+      00000000000000000000000031F70031F70000000000000000000000000031F7
+      0031F70031F70000000000000000000000000000000000000000000000000000
+      000031F70000000000000031F70031F70031F700000000000000000000000000
+      00000000000000000000000000000000000000000000000000000031F70031F7
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = cmd_batalClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object cmd_simpan: TBitBtn
+    Left = 272
+    Height = 25
+    Hint = 'Simpan data barang'
+    Top = 208
+    Width = 96
+    Caption = '&OK'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      00000000000000000052A54A0094086BB5630000000000000000000000000000
+      0000000000000000000000000000000000000000000000000018B52900BD2100
+      94008CBD7B000000000000000000000000000000000000000000000000000000
+      0000000000006BB56300BD2100C62900A500319C310000000000000000000000
+      00000000000000000000000000000000000000000000009C1000CE3100C62900
+      AD10009400A5C694000000000000000000000000000000000000000000000000
+      00000052A54A00CE3100C62900FF6300CE31009C00008C000000000000000000
+      0000000000000000000000000000000000000018B52929CE5A00FF6300FF6300
+      BD2100C6290094008CBD7B000000000000000000000000000000000000000000
+      00000018C64200FF6300FF6352A54A52A54A00C62900A500319C310000000000
+      0000000000000000000000000000000000000000000000AD2100AD2100000000
+      000000AD1800C629009400A5C694000000000000000000000000000000000000
+      00000000000000000000000000000000000031B54200C629009C00008C000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000B52100C6290094008CBD7B000000000000000000000000000000
+      00000000000000000000000000000000000000000052A54A00C62929AD3931B5
+      4200000000000000000000000000000000000000000000000000000000000000
+      000000000000000029AD4A5AE7A529AD398CBD7B000000000000000000000000
+      00000000000000000000000000000000000000000000000031B54200D6428CBD
+      7B00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000A5C694000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = cmd_simpanClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Label6: TLabel
+    Left = 256
+    Height = 15
+    Top = 136
+    Width = 62
+    Caption = 'Stok di Rak'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit6: TEdit
+    Left = 326
+    Height = 23
+    Top = 128
+    Width = 96
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnKeyPress = Edit6KeyPress
+    ParentFont = False
+    TabOrder = 4
+    Text = 'Edit6'
+  end
+end

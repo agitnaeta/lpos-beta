@@ -1,0 +1,197 @@
+object tblBarangB: TtblBarangB
+  Left = 433
+  Height = 471
+  Top = 90
+  Width = 594
+  BorderStyle = bsToolWindow
+  Caption = 'Data Barang'
+  ClientHeight = 471
+  ClientWidth = 594
+  OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.4.4.0'
+  object dg: TDBGrid
+    Left = 0
+    Height = 312
+    Top = 0
+    Width = 512
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'KODE BARANG'
+        Width = 130
+        FieldName = 'kode_brg'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'BARCODE'
+        Width = 130
+        FieldName = 'barcode'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'NAMA BARANG'
+        Width = 250
+        FieldName = 'nama_brg'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'SATUAN'
+        Width = 90
+        FieldName = 'satuan'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'HARGA BELI'
+        Width = 130
+        FieldName = 'harga_beli'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'HARGA JUAL'
+        Width = 130
+        FieldName = 'harga_jual'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = '...'
+        Width = 1200
+      end>
+    DataSource = DataSource1
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ParentFont = False
+    TabOrder = 0
+    OnDblClick = dgDblClick
+  end
+  object gb1: TGroupBox
+    Left = 0
+    Height = 65
+    Top = 328
+    Width = 536
+    Caption = 'Pencarian Data Barang (Masukan Kode Barang atau Nama Barang)'
+    ClientHeight = 45
+    ClientWidth = 532
+    ParentFont = False
+    TabOrder = 1
+    object Edit1: TEdit
+      Left = 8
+      Height = 23
+      Top = 8
+      Width = 360
+      OnKeyPress = Edit1KeyPress
+      ParentFont = False
+      TabOrder = 0
+      Text = 'Edit1'
+    end
+    object Button5: TButton
+      Left = 368
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = '&Cari'
+      OnClick = Button5Click
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Button6: TButton
+      Left = 448
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = '&Refresh'
+      OnClick = Button6Click
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 264
+    top = 308
+  end
+  object ZQuery1: TZQuery
+    Connection = Utama.ZConnection1
+    SQL.Strings = (
+      'select * from data_brg'
+    )
+    Params = <>
+    left = 214
+    top = 306
+    object ZQuery1kode_brg: TStringField
+      DisplayWidth = 52
+      FieldKind = fkData
+      FieldName = 'kode_brg'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 52
+    end
+    object ZQuery1barcode: TStringField
+      DisplayWidth = 140
+      FieldKind = fkData
+      FieldName = 'barcode'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 140
+    end
+    object ZQuery1nama_brg: TStringField
+      DisplayWidth = 200
+      FieldKind = fkData
+      FieldName = 'nama_brg'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object ZQuery1satuan: TStringField
+      DisplayWidth = 40
+      FieldKind = fkData
+      FieldName = 'satuan'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 40
+    end
+    object ZQuery1harga_beli: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'harga_beli'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1harga_jual: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'harga_jual'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+  end
+end

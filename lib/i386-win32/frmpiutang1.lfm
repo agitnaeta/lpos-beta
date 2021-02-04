@@ -1,0 +1,357 @@
+object frmPiutang: TfrmPiutang
+  Left = 626
+  Height = 281
+  Top = 160
+  Width = 382
+  BorderStyle = bsToolWindow
+  Caption = 'Data Angsuran'
+  ClientHeight = 281
+  ClientWidth = 382
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object gb2: TGroupBox
+    Left = 0
+    Height = 248
+    Top = 40
+    Width = 385
+    ClientHeight = 228
+    ClientWidth = 381
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    object Shape3: TShape
+      Left = -2
+      Height = 40
+      Top = 184
+      Width = 379
+      Brush.Color = clDefault
+      Pen.Color = clGray
+    end
+    object Shape2: TShape
+      Left = 0
+      Height = 112
+      Top = 64
+      Width = 379
+      Brush.Color = clDefault
+      Pen.Color = clBlue
+    end
+    object Shape1: TShape
+      Left = 0
+      Height = 64
+      Top = -9
+      Width = 379
+      Brush.Color = clDefault
+      Pen.Color = clBlue
+    end
+    object Edit2: TEdit
+      Left = 152
+      Height = 23
+      Top = -1
+      Width = 219
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+      Text = 'Edit2'
+    end
+    object Edit3: TEdit
+      Left = 152
+      Height = 23
+      Top = 72
+      Width = 220
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      Text = 'Edit3'
+    end
+    object Edit4: TEdit
+      Left = 152
+      Height = 23
+      Top = 96
+      Width = 220
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 2
+      Text = 'Edit4'
+    end
+    object Edit5: TEdit
+      Left = 152
+      Height = 23
+      Top = 120
+      Width = 220
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnChange = Edit5Change
+      ParentFont = False
+      TabOrder = 3
+      Text = 'Edit5'
+    end
+    object Edit6: TEdit
+      Left = 152
+      Height = 23
+      Top = 144
+      Width = 220
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnChange = Edit6Change
+      OnKeyPress = Edit6KeyPress
+      ParentFont = False
+      TabOrder = 4
+      Text = 'Edit6'
+    end
+    object Label1: TLabel
+      Left = 8
+      Height = 15
+      Top = 7
+      Width = 57
+      Caption = 'ID Piutang'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 8
+      Height = 15
+      Top = 31
+      Width = 78
+      Caption = 'Tanggal Bayar'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 15
+      Top = 80
+      Width = 60
+      Caption = 'ID Member'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 8
+      Height = 15
+      Top = 104
+      Width = 74
+      Caption = 'Nama Debtur'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 8
+      Height = 15
+      Top = 152
+      Width = 53
+      Caption = 'Angsuran'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+    end
+    object DT1: TDateTimePicker
+      Left = 152
+      Height = 23
+      Top = 24
+      Width = 87
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = -53780
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 5
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 42450
+      Time = 0.423291342594894
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+    end
+    object Label8: TLabel
+      Left = 8
+      Height = 15
+      Top = 128
+      Width = 98
+      Caption = 'Sisa Pembayaran'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+    end
+    object cmd_batal: TBitBtn
+      Left = 275
+      Height = 25
+      Top = 192
+      Width = 96
+      Caption = '&Cancel'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        1800000000000003000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000031DE0031DE0000000031DE0031DE00000000000000000000000000
+        00000000000000000000000000000000000031DE0031DE0000000000000031DE
+        0031DE0031DE0000000000000000000000000000000000000000000000000031
+        DE0031DE0000000000000000000031DE0031DE0031DE0031DE00000000000000
+        00000000000000000000000031DE0031DE000000000000000000000000000000
+        0031EF0031DE0031DE0031DE0000000000000000000000000031DE0031DE0000
+        000000000000000000000000000000000000000000000031DE0031DE0031DE00
+        00000031DE0031DE0031DE000000000000000000000000000000000000000000
+        0000000000000000000031DE0031E70031E70031E70031DE0000000000000000
+        000000000000000000000000000000000000000000000000000000000031E700
+        31E70031EF000000000000000000000000000000000000000000000000000000
+        0000000000000000000031DE0031EF0031E70031EF0031F70000000000000000
+        000000000000000000000000000000000000000000000031F70031EF0031E700
+        00000000000031F70031F7000000000000000000000000000000000000000000
+        0000000031FF0031EF0031F70000000000000000000000000031FF0031F70000
+        000000000000000000000000000000000031F70031F70031FF00000000000000
+        00000000000000000000000031F70031F70000000000000000000000000031F7
+        0031F70031F70000000000000000000000000000000000000000000000000000
+        000031F70000000000000031F70031F70031F700000000000000000000000000
+        00000000000000000000000000000000000000000000000000000031F70031F7
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      OnClick = cmd_batalClick
+      ParentFont = False
+      TabOrder = 7
+    end
+    object cmd_simpan: TBitBtn
+      Left = 176
+      Height = 25
+      Hint = 'Simpan data barang'
+      Top = 192
+      Width = 96
+      Caption = '&OK'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        1800000000000003000064000000640000000000000000000000000000000000
+        00000000000000000052A54A0094086BB5630000000000000000000000000000
+        0000000000000000000000000000000000000000000000000018B52900BD2100
+        94008CBD7B000000000000000000000000000000000000000000000000000000
+        0000000000006BB56300BD2100C62900A500319C310000000000000000000000
+        00000000000000000000000000000000000000000000009C1000CE3100C62900
+        AD10009400A5C694000000000000000000000000000000000000000000000000
+        00000052A54A00CE3100C62900FF6300CE31009C00008C000000000000000000
+        0000000000000000000000000000000000000018B52929CE5A00FF6300FF6300
+        BD2100C6290094008CBD7B000000000000000000000000000000000000000000
+        00000018C64200FF6300FF6352A54A52A54A00C62900A500319C310000000000
+        0000000000000000000000000000000000000000000000AD2100AD2100000000
+        000000AD1800C629009400A5C694000000000000000000000000000000000000
+        00000000000000000000000000000000000031B54200C629009C00008C000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000B52100C6290094008CBD7B000000000000000000000000000000
+        00000000000000000000000000000000000000000052A54A00C62929AD3931B5
+        4200000000000000000000000000000000000000000000000000000000000000
+        000000000000000029AD4A5AE7A529AD398CBD7B000000000000000000000000
+        00000000000000000000000000000000000000000000000031B54200D6428CBD
+        7B00000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000A5C694000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      OnClick = cmd_simpanClick
+      ParentFont = False
+      TabOrder = 6
+    end
+  end
+  object Edit8: TEdit
+    Left = 120
+    Height = 23
+    Top = 384
+    Width = 221
+    OnChange = Edit8Change
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    Text = 'Edit8'
+  end
+  object Edit7: TEdit
+    Left = 120
+    Height = 23
+    Top = 357
+    Width = 221
+    NumbersOnly = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+    Text = 'Edit7'
+  end
+  object Shape4: TShape
+    Left = 0
+    Height = 61
+    Top = -13
+    Width = 472
+    Brush.Color = 16777166
+    Pen.Color = clSilver
+  end
+  object Label7: TLabel
+    Left = 104
+    Height = 19
+    Top = 8
+    Width = 183
+    Caption = 'DATA ANGSURAN'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -16
+    Font.Name = 'Engravers MT'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 15
+    Top = 365
+    Width = 89
+    Caption = 'Sisa Pembayaran'
+    ParentColor = False
+  end
+end

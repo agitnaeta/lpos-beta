@@ -1,0 +1,237 @@
+210204 12:55:42 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:55:42 InnoDB: The InnoDB memory heap is disabled
+210204 12:55:42 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:55:42 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:55:42 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:55:42 InnoDB: Completed initialization of buffer pool
+210204 12:55:42 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:55:42 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:55:42 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:55:43 [Note] Event Scheduler: Loaded 0 events
+210204 12:55:43 [Note] mysqld-opt: ready for connections.
+Version: '5.5.13-log'  socket: ''  port: 3307  MySQL Community Server (GPL)
+210204 12:55:53 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:55:53 InnoDB: The InnoDB memory heap is disabled
+210204 12:55:53 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:55:53 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:55:53 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:55:53 InnoDB: Completed initialization of buffer pool
+210204 12:55:53 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:55:53 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:55:53 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:55:53 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:55:53 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:55:53 [ERROR] Aborting
+
+210204 12:55:53 [Note] mysqld-opt: Shutdown complete
+
+210204 12:55:55 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:55:55 InnoDB: The InnoDB memory heap is disabled
+210204 12:55:55 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:55:55 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:55:55 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:55:55 InnoDB: Completed initialization of buffer pool
+210204 12:55:55 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:55:55 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:55:55 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:55:55 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:55:55 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:55:55 [ERROR] Aborting
+
+210204 12:55:55 [Note] mysqld-opt: Shutdown complete
+
+210204 12:59:54 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:59:54 InnoDB: The InnoDB memory heap is disabled
+210204 12:59:54 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:59:54 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:59:54 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:59:54 InnoDB: Completed initialization of buffer pool
+210204 12:59:54 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:59:54 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:59:54 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:59:54 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:59:54 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:59:54 [ERROR] Aborting
+
+210204 12:59:54 [Note] mysqld-opt: Shutdown complete
+
+210204 12:59:55 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:59:55 InnoDB: The InnoDB memory heap is disabled
+210204 12:59:55 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:59:55 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:59:55 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:59:55 InnoDB: Completed initialization of buffer pool
+210204 12:59:55 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:59:55 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:59:55 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:59:55 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:59:55 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:59:55 [ERROR] Aborting
+
+210204 12:59:55 [Note] mysqld-opt: Shutdown complete
+
+210204 12:59:56 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:59:56 InnoDB: The InnoDB memory heap is disabled
+210204 12:59:56 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:59:56 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:59:56 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:59:56 InnoDB: Completed initialization of buffer pool
+210204 12:59:56 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:59:56 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:59:56 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:59:56 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:59:56 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:59:56 [ERROR] Aborting
+
+210204 12:59:56 [Note] mysqld-opt: Shutdown complete
+
+210204 12:59:57 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:59:57 InnoDB: The InnoDB memory heap is disabled
+210204 12:59:57 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:59:57 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:59:57 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:59:57 InnoDB: Completed initialization of buffer pool
+210204 12:59:57 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:59:57 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:59:57 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:59:57 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:59:57 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:59:57 [ERROR] Aborting
+
+210204 12:59:57 [Note] mysqld-opt: Shutdown complete
+
+210204 12:59:57 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:59:57 InnoDB: The InnoDB memory heap is disabled
+210204 12:59:57 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:59:57 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:59:57 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:59:57 InnoDB: Completed initialization of buffer pool
+210204 12:59:57 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:59:57 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:59:57 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:59:57 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:59:57 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:59:57 [ERROR] Aborting
+
+210204 12:59:57 [Note] mysqld-opt: Shutdown complete
+
+210204 12:59:58 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:59:58 InnoDB: The InnoDB memory heap is disabled
+210204 12:59:58 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:59:58 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:59:58 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:59:58 InnoDB: Completed initialization of buffer pool
+210204 12:59:58 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:59:58 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:59:58 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:59:58 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:59:58 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:59:58 [ERROR] Aborting
+
+210204 12:59:58 [Note] mysqld-opt: Shutdown complete
+
+210204 12:59:59 [Note] Plugin 'FEDERATED' is disabled.
+210204 12:59:59 InnoDB: The InnoDB memory heap is disabled
+210204 12:59:59 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 12:59:59 InnoDB: Compressed tables use zlib 1.2.3
+210204 12:59:59 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 12:59:59 InnoDB: Completed initialization of buffer pool
+210204 12:59:59 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 12:59:59 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 12:59:59 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 12:59:59 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 12:59:59 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 12:59:59 [ERROR] Aborting
+
+210204 12:59:59 [Note] mysqld-opt: Shutdown complete
+
+210204 13:00:03 [Note] Plugin 'FEDERATED' is disabled.
+210204 13:00:03 InnoDB: The InnoDB memory heap is disabled
+210204 13:00:03 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 13:00:03 InnoDB: Compressed tables use zlib 1.2.3
+210204 13:00:03 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 13:00:03 InnoDB: Completed initialization of buffer pool
+210204 13:00:03 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 13:00:03 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 13:00:03 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 13:00:03 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 13:00:03 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 13:00:03 [ERROR] Aborting
+
+210204 13:00:03 [Note] mysqld-opt: Shutdown complete
+
+210204 13:00:04 [Note] Plugin 'FEDERATED' is disabled.
+210204 13:00:04 InnoDB: The InnoDB memory heap is disabled
+210204 13:00:04 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 13:00:04 InnoDB: Compressed tables use zlib 1.2.3
+210204 13:00:04 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 13:00:04 InnoDB: Completed initialization of buffer pool
+210204 13:00:04 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 13:00:04 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 13:00:04 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 13:00:04 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 13:00:04 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 13:00:04 [ERROR] Aborting
+
+210204 13:00:05 [Note] mysqld-opt: Shutdown complete
+
+210204 13:01:56 [Note] Plugin 'FEDERATED' is disabled.
+210204 13:01:56 InnoDB: The InnoDB memory heap is disabled
+210204 13:01:56 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 13:01:56 InnoDB: Compressed tables use zlib 1.2.3
+210204 13:01:56 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 13:01:56 InnoDB: Completed initialization of buffer pool
+210204 13:01:56 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 13:01:56 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 13:01:56 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 13:01:56 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 13:01:56 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 13:01:56 [ERROR] Aborting
+
+210204 13:01:56 [Note] mysqld-opt: Shutdown complete
+
+210204 13:02:01 [Note] Plugin 'FEDERATED' is disabled.
+210204 13:02:01 InnoDB: The InnoDB memory heap is disabled
+210204 13:02:01 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 13:02:01 InnoDB: Compressed tables use zlib 1.2.3
+210204 13:02:01 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 13:02:01 InnoDB: Completed initialization of buffer pool
+210204 13:02:01 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 13:02:01 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 13:02:01 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 13:02:01 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 13:02:01 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 13:02:01 [ERROR] Aborting
+
+210204 13:02:01 [Note] mysqld-opt: Shutdown complete
+
+210204 13:02:02 [Note] Plugin 'FEDERATED' is disabled.
+210204 13:02:02 InnoDB: The InnoDB memory heap is disabled
+210204 13:02:02 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+210204 13:02:02 InnoDB: Compressed tables use zlib 1.2.3
+210204 13:02:02 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 8
+210204 13:02:02 InnoDB: Completed initialization of buffer pool
+210204 13:02:02 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+210204 13:02:02 [ERROR] Plugin 'InnoDB' init function returned error.
+210204 13:02:02 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+210204 13:02:02 [ERROR] Can't start server: Bind on TCP/IP port: No such file or directory
+210204 13:02:02 [ERROR] Do you already have another mysqld server running on port: 3307 ?
+210204 13:02:02 [ERROR] Aborting
+
+210204 13:02:02 [Note] mysqld-opt: Shutdown complete
+

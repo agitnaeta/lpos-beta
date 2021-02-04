@@ -1,0 +1,19 @@
+180421 20:12:59 [Note] Plugin 'FEDERATED' is disabled.
+180421 20:13:00 InnoDB: The InnoDB memory heap is disabled
+180421 20:13:00 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+180421 20:13:00 InnoDB: Compressed tables use zlib 1.2.3
+180421 20:13:00 InnoDB: Initializing buffer pool, size = 2.0G
+InnoDB: VirtualAlloc(2175795200 bytes) failed; Windows error 87
+180421 20:13:00 InnoDB: Completed initialization of buffer pool
+180421 20:13:00 InnoDB: Fatal error: cannot allocate memory for the buffer pool
+180421 20:13:00 [ERROR] Plugin 'InnoDB' init function returned error.
+180421 20:13:00 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+180421 20:13:01 [Note] Event Scheduler: Loaded 0 events
+180421 20:13:01 [Note] mysqld-opt: ready for connections.
+Version: '5.5.15-log'  socket: ''  port: 3307  MySQL Community Server (GPL)
+180421 20:13:13 [ERROR] mysqld-opt: Table '.\pos\data_brg' is marked as crashed and should be repaired
+180421 20:13:13 [Warning] Checking table:   '.\pos\data_brg'
+180421 20:13:14 [ERROR] mysqld-opt: Table '.\pos\stok' is marked as crashed and should be repaired
+180421 20:13:14 [Warning] Checking table:   '.\pos\stok'
+180421 20:13:14 [ERROR] mysqld-opt: Table '.\pos\temp_stok' is marked as crashed and should be repaired
+180421 20:13:14 [Warning] Checking table:   '.\pos\temp_stok'

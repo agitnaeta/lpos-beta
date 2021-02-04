@@ -1,0 +1,77 @@
+object v_keyserial: Tv_keyserial
+  Left = 389
+  Height = 134
+  Top = 276
+  Width = 654
+  BorderStyle = bsNone
+  Caption = 'Serial Key'
+  ClientHeight = 134
+  ClientWidth = 654
+  Color = 10400869
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '1.6.2.0'
+  object Button1: TButton
+    Left = 462
+    Height = 25
+    Top = 22
+    Width = 75
+    Caption = 'Activasi'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 544
+    Height = 25
+    Top = 22
+    Width = 75
+    Caption = 'Batal'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 104
+    Height = 23
+    Top = 23
+    Width = 312
+    TabOrder = 2
+    Text = 'Edit1'
+  end
+  object Label1: TLabel
+    Left = 40
+    Height = 15
+    Top = 28
+    Width = 50
+    Caption = 'Serial Key'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 104
+    Height = 23
+    Top = 48
+    Width = 146
+    TabOrder = 3
+    Text = 'Edit2'
+  end
+  object Button3: TButton
+    Left = 420
+    Height = 26
+    Top = 21
+    Width = 37
+    Caption = ',,,'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Edit3: TEdit
+    Left = 104
+    Height = 23
+    Top = 72
+    Width = 312
+    TabOrder = 5
+    Text = 'Edit3'
+  end
+  object OpenDialog1: TOpenDialog
+    left = 474
+    top = 52
+  end
+end

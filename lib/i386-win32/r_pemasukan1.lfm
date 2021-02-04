@@ -1,0 +1,1560 @@
+object r_pemasukan: Tr_pemasukan
+  Left = 314
+  Height = 62
+  Top = 164
+  Width = 490
+  BorderStyle = bsToolWindow
+  Caption = 'Laporan Perkiraan Pemasukan'
+  ClientHeight = 62
+  ClientWidth = 490
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object DT1: TDateTimePicker
+    Left = 56
+    Height = 23
+    Top = 16
+    Width = 83
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 0
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 42447
+    Time = 0.395863993056992
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object DT2: TDateTimePicker
+    Left = 184
+    Height = 23
+    Top = 16
+    Width = 83
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 1
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 42447
+    Time = 0.395863993056992
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object Label2: TLabel
+    Left = 152
+    Height = 15
+    Top = 24
+    Width = 17
+    Caption = 's/d'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 24
+    Width = 21
+    Caption = 'Dari'
+    ParentColor = False
+  end
+  object RLReport1: TRLReport
+    Left = 0
+    Height = 1123
+    Top = 104
+    Width = 794
+    DataSource = DataSource1
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    RealBounds.Left = 0
+    RealBounds.Top = 0
+    RealBounds.Width = 0
+    RealBounds.Height = 0
+    object RLMemo1: TRLMemo
+      Left = 182
+      Height = 16
+      Top = -162
+      Width = 185
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+    end
+    object RLGroup1: TRLGroup
+      Left = 38
+      Height = 128
+      Top = 102
+      Width = 718
+      DataFields = 'tgl_trnsksi'
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RLBand2: TRLBand
+        Left = 0
+        Height = 16
+        Top = 56
+        Width = 718
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        object RLDraw23: TRLDraw
+          Left = 563
+          Height = 56
+          Top = -40
+          Width = 120
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw14: TRLDraw
+          Left = 464
+          Height = 56
+          Top = -40
+          Width = 120
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw15: TRLDraw
+          Left = 369
+          Height = 56
+          Top = -40
+          Width = 120
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw16: TRLDraw
+          Left = 257
+          Height = 56
+          Top = -40
+          Width = 128
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw17: TRLDraw
+          Left = 121
+          Height = 56
+          Top = -40
+          Width = 144
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw3: TRLDraw
+          Left = 32
+          Height = 56
+          Top = -40
+          Width = 105
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDBText9: TRLDBText
+          Left = 40
+          Height = 13
+          Top = 0
+          Width = 48
+          Alignment = taJustify
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'id_trnsksi'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText10: TRLDBText
+          Left = 207
+          Height = 13
+          Top = 0
+          Width = 47
+          Alignment = taRightJustify
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'total_beli'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText11: TRLDBText
+          Left = 330
+          Height = 13
+          Top = 0
+          Width = 48
+          Alignment = taRightJustify
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'total_jual'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText12: TRLDBText
+          Left = 417
+          Height = 13
+          Top = 0
+          Width = 67
+          Alignment = taRightJustify
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'total_piutang'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText13: TRLDBText
+          Left = 518
+          Height = 13
+          Top = 0
+          Width = 57
+          Alignment = taRightJustify
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'total_biaya'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText14: TRLDBText
+          Left = 613
+          Height = 13
+          Top = 0
+          Width = 65
+          Alignment = taRightJustify
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'total_hutang'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+      end
+      object RLBand3: TRLBand
+        Left = 0
+        Height = 56
+        Top = 0
+        Width = 718
+        BandType = btHeader
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        object RLDraw13: TRLDraw
+          Left = 563
+          Height = 24
+          Top = 32
+          Width = 120
+          Angle = 0
+          Brush.Color = 8453973
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw8: TRLDraw
+          Left = 32
+          Height = 24
+          Top = 32
+          Width = 136
+          Angle = 0
+          Brush.Color = 8453973
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw9: TRLDraw
+          Left = 136
+          Height = 24
+          Top = 32
+          Width = 152
+          Angle = 0
+          Brush.Color = 8453973
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw10: TRLDraw
+          Left = 264
+          Height = 24
+          Top = 32
+          Width = 128
+          Angle = 0
+          Brush.Color = 8453973
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw11: TRLDraw
+          Left = 384
+          Height = 24
+          Top = 32
+          Width = 115
+          Angle = 0
+          Brush.Color = 8453973
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLLabel2: TRLLabel
+          Left = 40
+          Height = 13
+          Top = 38
+          Width = 84
+          Alignment = taCenter
+          Caption = 'ID TRANSAKSI'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel3: TRLLabel
+          Left = 144
+          Height = 13
+          Top = 38
+          Width = 110
+          Alignment = taCenter
+          Caption = 'TOTAL PENGADAAN'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel4: TRLLabel
+          Left = 272
+          Height = 13
+          Top = 38
+          Width = 106
+          Alignment = taCenter
+          Caption = 'TOTAL PENJUALAN'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel5: TRLLabel
+          Left = 392
+          Height = 13
+          Top = 38
+          Width = 92
+          Alignment = taCenter
+          Caption = 'TOTAL PIUTANG'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDraw12: TRLDraw
+          Left = 488
+          Height = 24
+          Top = 32
+          Width = 96
+          Angle = 0
+          Brush.Color = 8453973
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLLabel6: TRLLabel
+          Left = 497
+          Height = 13
+          Top = 38
+          Width = 78
+          Alignment = taCenter
+          Caption = 'TOTAL BIAYA'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText16: TRLDBText
+          Left = 112
+          Height = 13
+          Top = 8
+          Width = 52
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'tgl_trnsksi'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel8: TRLLabel
+          Left = 32
+          Height = 13
+          Top = 8
+          Width = 70
+          Caption = 'TANGGAL   : '
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel11: TRLLabel
+          Left = 590
+          Height = 13
+          Top = 38
+          Width = 88
+          Alignment = taCenter
+          Caption = 'TOTAL HUTANG'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+      end
+      object RLBand4: TRLBand
+        Left = 0
+        Height = 40
+        Top = 72
+        Width = 718
+        BandType = btColumnFooter
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        object RLDraw20: TRLDraw
+          Left = 570
+          Height = 56
+          Top = -40
+          Width = 113
+          Angle = 0
+          Brush.Color = 16763541
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw25: TRLDraw
+          Left = 455
+          Height = 72
+          Top = -56
+          Width = 129
+          Angle = 0
+          Brush.Color = 16763541
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw24: TRLDraw
+          Left = 360
+          Height = 72
+          Top = -56
+          Width = 129
+          Angle = 0
+          Brush.Color = 16763541
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw19: TRLDraw
+          Left = 256
+          Height = 72
+          Top = -56
+          Width = 129
+          Angle = 0
+          Brush.Color = 16763541
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw21: TRLDraw
+          Left = 96
+          Height = 96
+          Top = -80
+          Width = 169
+          Angle = 0
+          Brush.Color = 16763541
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw22: TRLDraw
+          Left = 32
+          Height = 56
+          Top = -40
+          Width = 105
+          Angle = 0
+          Brush.Color = 16763541
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDBResult1: TRLDBResult
+          Left = 176
+          Height = 13
+          Top = 0
+          Width = 78
+          Alignment = taRightJustify
+          DataField = 'total_beli'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Info = riSum
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel10: TRLLabel
+          Left = 84
+          Height = 13
+          Top = 0
+          Width = 40
+          Alignment = taCenter
+          Caption = 'TOTAL'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBResult3: TRLDBResult
+          Left = 299
+          Height = 13
+          Top = 0
+          Width = 79
+          Alignment = taRightJustify
+          DataField = 'total_jual'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Info = riSum
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBResult4: TRLDBResult
+          Left = 386
+          Height = 13
+          Top = 0
+          Width = 98
+          Alignment = taRightJustify
+          DataField = 'total_piutang'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Info = riSum
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBResult5: TRLDBResult
+          Left = 487
+          Height = 13
+          Top = 0
+          Width = 88
+          Alignment = taRightJustify
+          DataField = 'total_biaya'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Info = riSum
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBResult6: TRLDBResult
+          Left = 582
+          Height = 13
+          Top = 0
+          Width = 96
+          Alignment = taRightJustify
+          DataField = 'total_hutang'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Info = riSum
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDraw1: TRLDraw
+          Left = 8
+          Height = 7
+          Top = 24
+          Width = 696
+          Angle = 0
+          DrawKind = dkLine
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+      end
+    end
+    object RLBand6: TRLBand
+      Left = 38
+      Height = 64
+      Top = 38
+      Width = 718
+      BandType = btTitle
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RLLabel14: TRLLabel
+        Left = 290
+        Height = 13
+        Top = 8
+        Width = 194
+        Alignment = taCenter
+        Caption = 'LAPORAN PERKIRAAN PEMASUKAN'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDraw2: TRLDraw
+        Left = 8
+        Height = 7
+        Top = 52
+        Width = 1024
+        Angle = 0
+        DrawKind = dkLine
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDraw4: TRLDraw
+        Left = 8
+        Height = 7
+        Top = 48
+        Width = 1024
+        Angle = 0
+        DrawKind = dkLine
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+    end
+    object RLBand5: TRLBand
+      Left = 38
+      Height = 104
+      Top = 230
+      Width = 718
+      BandType = btSummary
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RLDraw42: TRLDraw
+        Left = 32
+        Height = 40
+        Top = 56
+        Width = 424
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw41: TRLDraw
+        Left = 384
+        Height = 40
+        Top = 56
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw40: TRLDraw
+        Left = 136
+        Height = 40
+        Top = 40
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw39: TRLDraw
+        Left = 152
+        Height = 40
+        Top = 24
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw38: TRLDraw
+        Left = 144
+        Height = 40
+        Top = 8
+        Width = 295
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw37: TRLDraw
+        Left = 152
+        Height = 40
+        Top = -8
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw36: TRLDraw
+        Left = 384
+        Height = 60
+        Top = 20
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw35: TRLDraw
+        Left = 384
+        Height = 40
+        Top = 24
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw34: TRLDraw
+        Left = 384
+        Height = 40
+        Top = 8
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw33: TRLDraw
+        Left = 384
+        Height = 40
+        Top = -8
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw32: TRLDraw
+        Left = 384
+        Height = 16
+        Top = 0
+        Width = 299
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw27: TRLDraw
+        Left = 192
+        Height = 16
+        Top = 0
+        Width = 193
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLDraw26: TRLDraw
+        Left = 32
+        Height = 80
+        Top = 0
+        Width = 161
+        Angle = 0
+        Color = clWhite
+        ParentColor = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        Transparent = False
+      end
+      object RLLabel12: TRLLabel
+        Left = 56
+        Height = 13
+        Top = 32
+        Width = 122
+        Alignment = taCenter
+        Caption = 'TOTAL KESELURUHAN'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDBResult2: TRLDBResult
+        Left = 600
+        Height = 13
+        Top = 16
+        Width = 78
+        Alignment = taRightJustify
+        DataField = 'total_beli'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Info = riSum
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDBResult7: TRLDBResult
+        Left = 599
+        Height = 13
+        Top = 0
+        Width = 79
+        Alignment = taRightJustify
+        DataField = 'total_jual'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Info = riSum
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDBResult8: TRLDBResult
+        Left = 580
+        Height = 13
+        Top = 32
+        Width = 98
+        Alignment = taRightJustify
+        DataField = 'total_piutang'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Info = riSum
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDBResult9: TRLDBResult
+        Left = 590
+        Height = 13
+        Top = 48
+        Width = 88
+        Alignment = taRightJustify
+        DataField = 'total_biaya'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Info = riSum
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDBResult10: TRLDBResult
+        Left = 582
+        Height = 13
+        Top = 64
+        Width = 96
+        Alignment = taRightJustify
+        DataField = 'total_hutang'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Info = riSum
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLLabel13: TRLLabel
+        Left = 200
+        Height = 13
+        Top = 64
+        Width = 50
+        Alignment = taCenter
+        Caption = 'HUTANG'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLLabel7: TRLLabel
+        Left = 200
+        Height = 13
+        Top = 48
+        Width = 120
+        Alignment = taCenter
+        Caption = 'BIAYA OPERASIONAL'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLLabel9: TRLLabel
+        Left = 200
+        Height = 13
+        Top = 32
+        Width = 146
+        Alignment = taCenter
+        Caption = 'PIUTANG (UANG DI LUAR)'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLLabel15: TRLLabel
+        Left = 200
+        Height = 13
+        Top = 16
+        Width = 120
+        Alignment = taCenter
+        Caption = 'PENGADAAN BARANG'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLLabel16: TRLLabel
+        Left = 200
+        Height = 13
+        Top = 0
+        Width = 116
+        Alignment = taCenter
+        Caption = 'PENJUALAN BARANG'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLLabel17: TRLLabel
+        Left = 56
+        Height = 13
+        Top = 80
+        Width = 128
+        Alignment = taCenter
+        Caption = 'PREDIKSI PEMASUKAN'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDBResult11: TRLDBResult
+        Left = 179
+        Height = 13
+        Top = 80
+        Width = 499
+        Alignment = taRightJustify
+        DataFormula = '(sum total_jual)-((sum total_beli)+(sum total_piutang)+(sum total_biaya)+(sum total_hutang))'
+        DataSource = DataSource1
+        DisplayMask = '#,#0.00'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+    end
+  end
+  object cmd_preview: TBitBtn
+    Left = 280
+    Height = 25
+    Hint = 'Simpan data barang'
+    Top = 14
+    Width = 96
+    Caption = '&Preview'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      A5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA563
+      6BA5636BA5636B0000000000000000004A5263FFEFC6F7D6B5EFD6ADEFCE9CEF
+      CE94EFC68CEFBD84EFBD7BEFBD84EFBD84EFC684A5636B000000000000636B84
+      186BC6636B84F7DEBDEFD6ADEFCEA5EFCE9CEFC694EFC68CEFBD84EFBD7BEFBD
+      7BEFC684A5636B00000000000000000031A5FF1073D66B6B84F7DEBDEFD6B5EF
+      CEA5EFCE9CEFC694EFC68CEFBD84EFBD7BEFC684A5636B000000000000000000
+      A5635A31A5FF1073D65A6384F7DEBDEFD6ADEFCEA5EFCE9CEFC694EFC68CEFBD
+      84EFC684A5636B000000000000000000A5736BFFF7EF31A5FF427BAD8C635AAD
+      7B7394635AAD7B6BCEA584EFC694EFC68CEFC684A5636B000000000000000000
+      A5736BFFFFFFF7EFE7AD8C8CB58C84DEBDA5EFD6B5D6B59CB58C73CEA584EFC6
+      94EFC68CA5636B000000000000000000BD846BFFFFFFFFF7EFAD847BDEC6B5F7
+      E7CEF7E7C6FFFFF7D6B59CAD7B6BEFCE9CEFCE94A5636B000000000000000000
+      BD846BFFFFFFFFFFFF946363F7EFDEF7EFDEF7E7CEFFFFEFEFD6B594635AEFCE
+      A5F7D6A5A5636B000000000000000000D6946BFFFFFFFFFFFFB58C84DEC6C6F7
+      EFE7F7EFDEFFFFD6DEBDA5AD7B73F7D6ADEFCEA5A5636B000000000000000000
+      D6946BFFFFFFFFFFFFD6BDBDBD9494DEC6C6F7EFDEDEC6B5B58C84B58C7BDECE
+      B5B5AD94A5636B000000000000000000DE9C73FFFFFFFFFFFFFFFFFFD6BDBDB5
+      8C84946363AD847BCEA59CA56B5AA56B5AA56B5AA5636B000000000000000000
+      DE9C73FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFFFF7D6BDBDA56B5AE79C
+      52E78C31B56B4A000000000000000000E7AD7BFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFDEC6C6A56B5AFFB55ABD7B5A000000000000000000000000
+      E7AD7BF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFD6BDBDA56B5ABD84
+      6B000000000000000000000000000000E7AD7BD6946BD6946BD6946BD6946BD6
+      946BD6946BD6946BD6946BA56B5A000000000000000000000000
+    }
+    OnClick = cmd_previewClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object cmd_batal: TBitBtn
+    Left = 378
+    Height = 25
+    Top = 14
+    Width = 96
+    Caption = '&Cancel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000031DE0031DE0000000031DE0031DE00000000000000000000000000
+      00000000000000000000000000000000000031DE0031DE0000000000000031DE
+      0031DE0031DE0000000000000000000000000000000000000000000000000031
+      DE0031DE0000000000000000000031DE0031DE0031DE0031DE00000000000000
+      00000000000000000000000031DE0031DE000000000000000000000000000000
+      0031EF0031DE0031DE0031DE0000000000000000000000000031DE0031DE0000
+      000000000000000000000000000000000000000000000031DE0031DE0031DE00
+      00000031DE0031DE0031DE000000000000000000000000000000000000000000
+      0000000000000000000031DE0031E70031E70031E70031DE0000000000000000
+      000000000000000000000000000000000000000000000000000000000031E700
+      31E70031EF000000000000000000000000000000000000000000000000000000
+      0000000000000000000031DE0031EF0031E70031EF0031F70000000000000000
+      000000000000000000000000000000000000000000000031F70031EF0031E700
+      00000000000031F70031F7000000000000000000000000000000000000000000
+      0000000031FF0031EF0031F70000000000000000000000000031FF0031F70000
+      000000000000000000000000000000000031F70031F70031FF00000000000000
+      00000000000000000000000031F70031F70000000000000000000000000031F7
+      0031F70031F70000000000000000000000000000000000000000000000000000
+      000031F70000000000000031F70031F70031F700000000000000000000000000
+      00000000000000000000000000000000000000000000000000000031F70031F7
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = cmd_batalClick
+    ParentFont = False
+    TabOrder = 4
+  end
+  object ZQuery1: TZQuery
+    Connection = Utama.ZConnection1
+    SQL.Strings = (
+      'select * from pemasukan'
+    )
+    Params = <>
+    left = 96
+    top = 40
+    object ZQuery1tgl_trnsksi: TDateField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'tgl_trnsksi'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQuery1id_trnsksi: TStringField
+      DisplayWidth = 52
+      FieldKind = fkData
+      FieldName = 'id_trnsksi'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 52
+    end
+    object ZQuery1total_beli: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'total_beli'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1total_jual: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'total_jual'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1total_piutang: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'total_piutang'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1total_biaya: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'total_biaya'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1total_hutang: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'total_hutang'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 280
+    top = 40
+  end
+end

@@ -1,0 +1,6 @@
+SELECT * FROM penjualan WHERE tgl_jual="2018-12-30";
+
+ALTER TABLE penjualan ADD laba_per_item FLOAT AFTER harga_jual , ADD persen_zakat FLOAT AFTER laba_per_item , 
+ADD zakat FLOAT AFTER persen_zakat, ADD pokok FLOAT AFTER zakat ;
+
+ALTER TABLE penjualan DROP laba_per_item , DROP persen_zakat , DROP zakat , DROP pokok  ;

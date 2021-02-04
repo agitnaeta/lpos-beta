@@ -1,0 +1,249 @@
+object PopUp: TPopUp
+  Left = 149
+  Height = 212
+  Top = 161
+  Width = 773
+  BorderStyle = bsToolWindow
+  Caption = 'Silahkan Pilih Barang'''
+  ClientHeight = 212
+  ClientWidth = 773
+  OnResize = FormResize
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object dg: TDBGrid
+    Left = 0
+    Height = 312
+    Top = 0
+    Width = 512
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'KODE BARANG'
+        Width = 130
+        FieldName = 'kode_brg'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'BARCODE'
+        Width = 130
+        FieldName = 'barcode'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'NAMA BARANG'
+        Width = 250
+        FieldName = 'nama_brg'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'SATUAN'
+        Width = 90
+        FieldName = 'satuan'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'HARGA BELI'
+        Width = 130
+        FieldName = 'harga_beli'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'HARGA JUAL 1'
+        FieldName = 'harga_jual1'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'HARGA JUAL 2'
+        FieldName = 'harga_jual2'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'HARGA JUAL 3'
+        Width = 130
+        FieldName = 'harga_jual3'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'HARGA JUAL 4'
+        Width = 130
+        FieldName = 'harga_jual4'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = '...'
+        Width = 1200
+      end>
+    DataSource = DataSource1
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ParentFont = False
+    TabOrder = 0
+    OnDblClick = dgDblClick
+    OnKeyDown = dgKeyDown
+  end
+  object Edit1: TEdit
+    Left = 528
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 1
+    Text = 'Edit1'
+    Visible = False
+  end
+  object Edit2: TEdit
+    Left = 528
+    Height = 23
+    Top = 136
+    Width = 80
+    TabOrder = 2
+    Text = 'Edit2'
+    Visible = False
+  end
+  object ZQuery1: TZQuery
+    Connection = Utama.ZConnection1
+    SQL.Strings = (
+      'select * from data_brg'
+    )
+    Params = <>
+    left = 232
+    top = 80
+    object ZQuery1kode_brg: TStringField
+      DisplayWidth = 52
+      FieldKind = fkData
+      FieldName = 'kode_brg'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 52
+    end
+    object ZQuery1barcode: TStringField
+      DisplayWidth = 140
+      FieldKind = fkData
+      FieldName = 'barcode'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 140
+    end
+    object ZQuery1nama_brg: TStringField
+      DisplayWidth = 200
+      FieldKind = fkData
+      FieldName = 'nama_brg'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object ZQuery1satuan: TStringField
+      DisplayWidth = 40
+      FieldKind = fkData
+      FieldName = 'satuan'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 40
+    end
+    object ZQuery1harga_beli: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'harga_beli'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1harga_jual1: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'harga_jual1'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1harga_jual2: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'harga_jual2'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1harga_jual3: TFloatField
+      FieldKind = fkData
+      FieldName = 'harga_jual3'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1harga_jual4: TFloatField
+      FieldKind = fkData
+      FieldName = 'harga_jual4'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,#0.00;(#,#0.00);#,#0.00'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1rak: TStringField
+      FieldKind = fkData
+      FieldName = 'rak'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQuery1id_distributor: TStringField
+      FieldKind = fkData
+      FieldName = 'id_distributor'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 52
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 312
+    top = 80
+  end
+end

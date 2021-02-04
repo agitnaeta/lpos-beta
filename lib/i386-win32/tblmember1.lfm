@@ -1,0 +1,156 @@
+object tblMemberA: TtblMemberA
+  Left = 423
+  Height = 454
+  Top = 149
+  Width = 633
+  BorderStyle = bsToolWindow
+  Caption = 'Data Member'
+  ClientHeight = 454
+  ClientWidth = 633
+  OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.4.4.0'
+  object dg: TDBGrid
+    Left = 0
+    Height = 312
+    Top = 0
+    Width = 512
+    AlternateColor = 14737632
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'ID MEMBER'
+        Width = 120
+        FieldName = 'id_member'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'NAMA MEMBER'
+        Width = 190
+        FieldName = 'nama_member'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'ALAMAT MEMBER'
+        Width = 200
+        FieldName = 'alamat_member'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'KONTAK MEMBER'
+        Width = 120
+        FieldName = 'kontak_member'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'STATUS MEMBER'
+        Width = 120
+        FieldName = 'status'
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = '...'
+        Width = 1200
+      end>
+    DataSource = DataSource1
+    FixedColor = clNavy
+    FixedCols = 0
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ParentFont = False
+    TabOrder = 0
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Color = clWhite
+    TitleFont.Height = -11
+    TitleFont.Name = 'Arial'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+    TitleFont.Style = [fsBold]
+    OnDblClick = dgDblClick
+  end
+  object gb1: TGroupBox
+    Left = 8
+    Height = 65
+    Top = 328
+    Width = 536
+    Caption = 'Pencarian Data Member'
+    ClientHeight = 45
+    ClientWidth = 532
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    object Edit1: TEdit
+      Left = 8
+      Height = 23
+      Top = 8
+      Width = 360
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnEnter = Edit1Enter
+      OnExit = Edit1Exit
+      OnKeyPress = Edit1KeyPress
+      ParentFont = False
+      TabOrder = 0
+      Text = 'Edit1'
+    end
+    object Button5: TButton
+      Left = 368
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = '&Cari'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = Button5Click
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Button6: TButton
+      Left = 448
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = '&Refresh'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = Button6Click
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 248
+    top = 280
+  end
+  object ZQuery1: TZQuery
+    Connection = Utama.ZConnection1
+    SQL.Strings = (
+      'select * from member'
+    )
+    Params = <>
+    left = 168
+    top = 272
+  end
+end

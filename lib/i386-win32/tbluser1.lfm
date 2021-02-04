@@ -1,0 +1,447 @@
+object tblUser: TtblUser
+  Left = 476
+  Height = 577
+  Top = 102
+  Width = 672
+  BorderStyle = bsToolWindow
+  Caption = 'Data Kasir'
+  ClientHeight = 577
+  ClientWidth = 672
+  OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object Shape3: TShape
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 680
+    Brush.Color = 16777166
+    Pen.Color = clSilver
+  end
+  object Shape1: TShape
+    Left = 0
+    Height = 104
+    Top = 32
+    Width = 672
+    Brush.Color = clDefault
+    Pen.Color = clBlue
+  end
+  object Edit1: TEdit
+    Left = 104
+    Height = 23
+    Top = 48
+    Width = 144
+    CharCase = ecUppercase
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    Text = 'EDIT1'
+  end
+  object Edit2: TEdit
+    Left = 104
+    Height = 23
+    Top = 72
+    Width = 190
+    CharCase = ecUppercase
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    Text = 'EDIT2'
+  end
+  object Edit3: TEdit
+    Left = 104
+    Height = 23
+    Top = 96
+    Width = 190
+    CharCase = ecUppercase
+    EchoMode = emPassword
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    PasswordChar = 'X'
+    TabOrder = 2
+    Text = 'EDIT3'
+  end
+  object Edit4: TEdit
+    Left = 464
+    Height = 23
+    Top = 48
+    Width = 190
+    CharCase = ecUppercase
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+    Text = 'EDIT4'
+  end
+  object Edit5: TEdit
+    Left = 464
+    Height = 23
+    Top = 72
+    Width = 190
+    CharCase = ecUppercase
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+    Text = 'EDIT5'
+  end
+  object Edit6: TEdit
+    Left = 464
+    Height = 23
+    Top = 96
+    Width = 190
+    CharCase = ecUppercase
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+    Text = 'EDIT6'
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 56
+    Width = 42
+    Caption = 'ID User'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 80
+    Width = 59
+    Caption = 'Username'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 104
+    Width = 56
+    Caption = 'Password'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 392
+    Height = 15
+    Top = 56
+    Width = 66
+    Caption = 'Nama Kasir'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 392
+    Height = 15
+    Top = 80
+    Width = 38
+    Caption = 'Alamat'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 392
+    Height = 15
+    Top = 104
+    Width = 59
+    Caption = 'No. Tlp/HP'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape2: TShape
+    Left = 0
+    Height = 40
+    Top = 144
+    Width = 672
+    Brush.Color = clDefault
+    Pen.Color = clGray
+  end
+  object Button1: TButton
+    Left = 502
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = '&OK'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Button2: TButton
+    Left = 579
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = '&Cancel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object dg: TDBGrid
+    Left = 0
+    Height = 296
+    Top = 188
+    Width = 672
+    AlternateColor = 14342874
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'ID USER'
+        Width = 120
+        FieldName = 'id_user'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'USERNAME'
+        Width = 120
+        FieldName = 'username'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'PASSWORD'
+        Width = 0
+        FieldName = 'password'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'NAMA KASIR'
+        Width = 120
+        FieldName = 'nama_kasir'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'ALAMAT'
+        Width = 120
+        FieldName = 'alamat'
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'NO TLP/HP'
+        Width = 120
+        FieldName = 'kontak_kasir'
+      end>
+    DataSource = DataSource1
+    FixedColor = clBlack
+    FixedCols = 0
+    Flat = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    ParentFont = False
+    TabOrder = 8
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Color = clWhite
+    TitleFont.Height = -11
+    TitleFont.Name = 'Arial'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+    TitleFont.Style = [fsBold]
+    OnCellClick = dgCellClick
+  end
+  object gb1: TGroupBox
+    Left = 8
+    Height = 65
+    Top = 496
+    Width = 536
+    Caption = 'Pencarian Data Kasir'
+    ClientHeight = 46
+    ClientWidth = 532
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+    object Button5: TButton
+      Left = 368
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = '&Cari'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = Button5Click
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Button6: TButton
+      Left = 448
+      Height = 25
+      Top = 6
+      Width = 75
+      Caption = '&Refresh'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -11
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = Button6Click
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Edit7: TEdit
+      Left = 8
+      Height = 23
+      Top = 6
+      Width = 352
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnEnter = Edit7Enter
+      OnExit = Edit7Exit
+      OnKeyPress = Edit7KeyPress
+      ParentFont = False
+      TabOrder = 2
+      Text = 'Edit7'
+    end
+  end
+  object Label7: TLabel
+    Left = 272
+    Height = 19
+    Top = 8
+    Width = 129
+    Caption = 'DATA KASIR'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -16
+    Font.Name = 'Engravers MT'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button3: TButton
+    Left = 579
+    Height = 25
+    Top = 520
+    Width = 75
+    Caption = 'Hapus'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Button4: TButton
+    Left = 248
+    Height = 25
+    Top = 47
+    Width = 46
+    Caption = '...'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button4Click
+    ParentFont = False
+    TabOrder = 11
+  end
+  object Button7: TButton
+    Left = 16
+    Height = 25
+    Top = 152
+    Width = 304
+    Caption = 'Ubah Username dan Password Administrator'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button7Click
+    ParentFont = False
+    TabOrder = 12
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 368
+    top = 312
+  end
+  object ZQuery1: TZQuery
+    Connection = Utama.ZConnection1
+    SQL.Strings = (
+      'select * from user'
+    )
+    Params = <>
+    left = 320
+    top = 312
+  end
+end

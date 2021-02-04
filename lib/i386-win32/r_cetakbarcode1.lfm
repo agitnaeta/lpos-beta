@@ -1,0 +1,369 @@
+object r_cetakbarcode: Tr_cetakbarcode
+  Left = 483
+  Height = 182
+  Top = 190
+  Width = 467
+  BorderStyle = bsToolWindow
+  Caption = 'Cetak Barcode'
+  ClientHeight = 182
+  ClientWidth = 467
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object Edit1: TEdit
+    Left = 94
+    Height = 23
+    Top = 56
+    Width = 352
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Label3: TLabel
+    Left = 6
+    Height = 15
+    Top = 64
+    Width = 72
+    Caption = 'Nama Barang'
+    ParentColor = False
+  end
+  object ComboBox1: TComboBox
+    Left = 94
+    Height = 23
+    Top = 32
+    Width = 352
+    ItemHeight = 15
+    TabOrder = 1
+    Text = 'ComboBox1'
+  end
+  object Label4: TLabel
+    Left = 34
+    Height = 15
+    Top = 40
+    Width = 44
+    Caption = 'Kategori'
+    ParentColor = False
+  end
+  object ComboBox2: TComboBox
+    Left = 94
+    Height = 23
+    Top = 8
+    Width = 352
+    ItemHeight = 15
+    TabOrder = 2
+    Text = 'ComboBox2'
+  end
+  object Label5: TLabel
+    Left = 59
+    Height = 15
+    Top = 16
+    Width = 19
+    Caption = 'Rak'
+    ParentColor = False
+  end
+  object ComboBox3: TComboBox
+    Left = 94
+    Height = 23
+    Top = 80
+    Width = 352
+    ItemHeight = 15
+    TabOrder = 3
+    Text = 'ComboBox3'
+  end
+  object Label6: TLabel
+    Left = 22
+    Height = 15
+    Top = 88
+    Width = 56
+    Caption = 'Distributor'
+    ParentColor = False
+  end
+  object cmd_preview: TBitBtn
+    Left = 251
+    Height = 25
+    Hint = 'Simpan data barang'
+    Top = 114
+    Width = 96
+    Caption = '&Preview'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      A5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA563
+      6BA5636BA5636B0000000000000000004A5263FFEFC6F7D6B5EFD6ADEFCE9CEF
+      CE94EFC68CEFBD84EFBD7BEFBD84EFBD84EFC684A5636B000000000000636B84
+      186BC6636B84F7DEBDEFD6ADEFCEA5EFCE9CEFC694EFC68CEFBD84EFBD7BEFBD
+      7BEFC684A5636B00000000000000000031A5FF1073D66B6B84F7DEBDEFD6B5EF
+      CEA5EFCE9CEFC694EFC68CEFBD84EFBD7BEFC684A5636B000000000000000000
+      A5635A31A5FF1073D65A6384F7DEBDEFD6ADEFCEA5EFCE9CEFC694EFC68CEFBD
+      84EFC684A5636B000000000000000000A5736BFFF7EF31A5FF427BAD8C635AAD
+      7B7394635AAD7B6BCEA584EFC694EFC68CEFC684A5636B000000000000000000
+      A5736BFFFFFFF7EFE7AD8C8CB58C84DEBDA5EFD6B5D6B59CB58C73CEA584EFC6
+      94EFC68CA5636B000000000000000000BD846BFFFFFFFFF7EFAD847BDEC6B5F7
+      E7CEF7E7C6FFFFF7D6B59CAD7B6BEFCE9CEFCE94A5636B000000000000000000
+      BD846BFFFFFFFFFFFF946363F7EFDEF7EFDEF7E7CEFFFFEFEFD6B594635AEFCE
+      A5F7D6A5A5636B000000000000000000D6946BFFFFFFFFFFFFB58C84DEC6C6F7
+      EFE7F7EFDEFFFFD6DEBDA5AD7B73F7D6ADEFCEA5A5636B000000000000000000
+      D6946BFFFFFFFFFFFFD6BDBDBD9494DEC6C6F7EFDEDEC6B5B58C84B58C7BDECE
+      B5B5AD94A5636B000000000000000000DE9C73FFFFFFFFFFFFFFFFFFD6BDBDB5
+      8C84946363AD847BCEA59CA56B5AA56B5AA56B5AA5636B000000000000000000
+      DE9C73FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFFFF7D6BDBDA56B5AE79C
+      52E78C31B56B4A000000000000000000E7AD7BFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFDEC6C6A56B5AFFB55ABD7B5A000000000000000000000000
+      E7AD7BF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFD6BDBDA56B5ABD84
+      6B000000000000000000000000000000E7AD7BD6946BD6946BD6946BD6946BD6
+      946BD6946BD6946BD6946BA56B5A000000000000000000000000
+    }
+    OnClick = cmd_previewClick
+    ParentFont = False
+    TabOrder = 4
+  end
+  object cmd_batal: TBitBtn
+    Left = 350
+    Height = 25
+    Top = 114
+    Width = 96
+    Caption = '&Cancel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000031DE0031DE0000000031DE0031DE00000000000000000000000000
+      00000000000000000000000000000000000031DE0031DE0000000000000031DE
+      0031DE0031DE0000000000000000000000000000000000000000000000000031
+      DE0031DE0000000000000000000031DE0031DE0031DE0031DE00000000000000
+      00000000000000000000000031DE0031DE000000000000000000000000000000
+      0031EF0031DE0031DE0031DE0000000000000000000000000031DE0031DE0000
+      000000000000000000000000000000000000000000000031DE0031DE0031DE00
+      00000031DE0031DE0031DE000000000000000000000000000000000000000000
+      0000000000000000000031DE0031E70031E70031E70031DE0000000000000000
+      000000000000000000000000000000000000000000000000000000000031E700
+      31E70031EF000000000000000000000000000000000000000000000000000000
+      0000000000000000000031DE0031EF0031E70031EF0031F70000000000000000
+      000000000000000000000000000000000000000000000031F70031EF0031E700
+      00000000000031F70031F7000000000000000000000000000000000000000000
+      0000000031FF0031EF0031F70000000000000000000000000031FF0031F70000
+      000000000000000000000000000000000031F70031F70031FF00000000000000
+      00000000000000000000000031F70031F70000000000000000000000000031F7
+      0031F70031F70000000000000000000000000000000000000000000000000000
+      000031F70000000000000031F70031F70031F700000000000000000000000000
+      00000000000000000000000000000000000000000000000000000031F70031F7
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = cmd_batalClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object RLReport1: TRLReport
+    Left = 26
+    Height = 1123
+    Top = 194
+    Width = 794
+    DataSource = DataSource1
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    RealBounds.Left = 0
+    RealBounds.Top = 0
+    RealBounds.Width = 0
+    RealBounds.Height = 0
+    object RLDetailGrid1: TRLDetailGrid
+      Left = 38
+      Height = 128
+      Top = 38
+      Width = 718
+      ColCount = 5
+      ColSpacing = 0
+      ColWidth = 0
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RLDBBarcode1: TRLDBBarcode
+        Left = 13
+        Height = 62
+        Top = 33
+        Width = 122
+        BarcodeType = bcEAN13
+        DataField = 'barcode'
+        DataSource = DataSource1
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Margins.LeftMargin = 1
+        Margins.RightMargin = 1
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDBText1: TRLDBText
+        Left = 42
+        Height = 16
+        Top = 8
+        Width = 61
+        Alignment = taCenter
+        DataField = 'nama_brg'
+        DataSource = DataSource1
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDBText2: TRLDBText
+        Left = 48
+        Height = 16
+        Top = 102
+        Width = 50
+        Alignment = taCenter
+        DataField = 'barcode'
+        DataSource = DataSource1
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+    end
+  end
+  object ZQuery1: TZQuery
+    Connection = Utama.ZConnection1
+    SQL.Strings = (
+      'select * from data_brg limit 20'
+    )
+    Params = <>
+    left = 452
+    top = 28
+    object ZQuery1kode_brg: TStringField
+      DisplayWidth = 52
+      FieldKind = fkData
+      FieldName = 'kode_brg'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 52
+    end
+    object ZQuery1barcode: TStringField
+      FieldKind = fkData
+      FieldName = 'barcode'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 80
+    end
+    object ZQuery1nama_brg: TStringField
+      DisplayWidth = 200
+      FieldKind = fkData
+      FieldName = 'nama_brg'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object ZQuery1satuan: TStringField
+      DisplayWidth = 40
+      FieldKind = fkData
+      FieldName = 'satuan'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 40
+    end
+    object ZQuery1harga_beli: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'harga_beli'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,###'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1komulatif: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'komulatif'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      MaxValue = 0
+      MinValue = 0
+      Precision = 23
+    end
+    object ZQuery1total_modal: TFloatField
+      FieldKind = fkData
+      FieldName = 'total_modal'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      DisplayFormat = '#,###'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 23
+    end
+    object ZQuery1total_komulatif: TFloatField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'total_komulatif'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      DisplayFormat = '#,###'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 23
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 492
+    top = 28
+  end
+  object RLPDFFilter1: TRLPDFFilter
+    DocumentInfo.Creator = 'FortesReport (Open Source) v3.24(B14)  \251 Copyright © 1999-2008 Fortes Informática'
+    DocumentInfo.ModDate = 0
+    ViewerOptions = []
+    FontEncoding = feNoEncoding
+    FileName = 'RLPDFFilter1'
+    DisplayName = 'PDF Document'
+    left = 178
+    top = 44
+  end
+  object RLSaveDialogSetup1: TRLSaveDialogSetup
+    BackgroundMode = False
+    Filter = RLPDFFilter1
+    left = 178
+    top = 103
+  end
+end

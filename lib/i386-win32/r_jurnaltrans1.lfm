@@ -1,0 +1,774 @@
+object r_JurnalTrans: Tr_JurnalTrans
+  Left = 318
+  Height = 72
+  Top = 138
+  Width = 519
+  BorderStyle = bsToolWindow
+  Caption = 'Laporan Jurnal Transaksi Penjualan'
+  ClientHeight = 72
+  ClientWidth = 519
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object DT1: TDateTimePicker
+    Left = 56
+    Height = 23
+    Top = 16
+    Width = 83
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 0
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 42447
+    Time = 0.395863993056992
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object DT2: TDateTimePicker
+    Left = 184
+    Height = 23
+    Top = 16
+    Width = 83
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 1
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 42447
+    Time = 0.395863993056992
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object Label2: TLabel
+    Left = 152
+    Height = 15
+    Top = 24
+    Width = 17
+    Caption = 's/d'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 24
+    Width = 21
+    Caption = 'Dari'
+    ParentColor = False
+  end
+  object cmd_preview: TBitBtn
+    Left = 280
+    Height = 25
+    Hint = 'Simpan data barang'
+    Top = 14
+    Width = 96
+    Caption = '&Preview'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      A5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA5636BA563
+      6BA5636BA5636B0000000000000000004A5263FFEFC6F7D6B5EFD6ADEFCE9CEF
+      CE94EFC68CEFBD84EFBD7BEFBD84EFBD84EFC684A5636B000000000000636B84
+      186BC6636B84F7DEBDEFD6ADEFCEA5EFCE9CEFC694EFC68CEFBD84EFBD7BEFBD
+      7BEFC684A5636B00000000000000000031A5FF1073D66B6B84F7DEBDEFD6B5EF
+      CEA5EFCE9CEFC694EFC68CEFBD84EFBD7BEFC684A5636B000000000000000000
+      A5635A31A5FF1073D65A6384F7DEBDEFD6ADEFCEA5EFCE9CEFC694EFC68CEFBD
+      84EFC684A5636B000000000000000000A5736BFFF7EF31A5FF427BAD8C635AAD
+      7B7394635AAD7B6BCEA584EFC694EFC68CEFC684A5636B000000000000000000
+      A5736BFFFFFFF7EFE7AD8C8CB58C84DEBDA5EFD6B5D6B59CB58C73CEA584EFC6
+      94EFC68CA5636B000000000000000000BD846BFFFFFFFFF7EFAD847BDEC6B5F7
+      E7CEF7E7C6FFFFF7D6B59CAD7B6BEFCE9CEFCE94A5636B000000000000000000
+      BD846BFFFFFFFFFFFF946363F7EFDEF7EFDEF7E7CEFFFFEFEFD6B594635AEFCE
+      A5F7D6A5A5636B000000000000000000D6946BFFFFFFFFFFFFB58C84DEC6C6F7
+      EFE7F7EFDEFFFFD6DEBDA5AD7B73F7D6ADEFCEA5A5636B000000000000000000
+      D6946BFFFFFFFFFFFFD6BDBDBD9494DEC6C6F7EFDEDEC6B5B58C84B58C7BDECE
+      B5B5AD94A5636B000000000000000000DE9C73FFFFFFFFFFFFFFFFFFD6BDBDB5
+      8C84946363AD847BCEA59CA56B5AA56B5AA56B5AA5636B000000000000000000
+      DE9C73FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFFFF7D6BDBDA56B5AE79C
+      52E78C31B56B4A000000000000000000E7AD7BFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFDEC6C6A56B5AFFB55ABD7B5A000000000000000000000000
+      E7AD7BF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFF7F7EFD6BDBDA56B5ABD84
+      6B000000000000000000000000000000E7AD7BD6946BD6946BD6946BD6946BD6
+      946BD6946BD6946BD6946BA56B5A000000000000000000000000
+    }
+    OnClick = cmd_previewClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object cmd_batal: TBitBtn
+    Left = 378
+    Height = 25
+    Top = 14
+    Width = 96
+    Caption = '&Cancel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000031DE0031DE0000000031DE0031DE00000000000000000000000000
+      00000000000000000000000000000000000031DE0031DE0000000000000031DE
+      0031DE0031DE0000000000000000000000000000000000000000000000000031
+      DE0031DE0000000000000000000031DE0031DE0031DE0031DE00000000000000
+      00000000000000000000000031DE0031DE000000000000000000000000000000
+      0031EF0031DE0031DE0031DE0000000000000000000000000031DE0031DE0000
+      000000000000000000000000000000000000000000000031DE0031DE0031DE00
+      00000031DE0031DE0031DE000000000000000000000000000000000000000000
+      0000000000000000000031DE0031E70031E70031E70031DE0000000000000000
+      000000000000000000000000000000000000000000000000000000000031E700
+      31E70031EF000000000000000000000000000000000000000000000000000000
+      0000000000000000000031DE0031EF0031E70031EF0031F70000000000000000
+      000000000000000000000000000000000000000000000031F70031EF0031E700
+      00000000000031F70031F7000000000000000000000000000000000000000000
+      0000000031FF0031EF0031F70000000000000000000000000031FF0031F70000
+      000000000000000000000000000000000031F70031F70031FF00000000000000
+      00000000000000000000000031F70031F70000000000000000000000000031F7
+      0031F70031F70000000000000000000000000000000000000000000000000000
+      000031F70000000000000031F70031F70031F700000000000000000000000000
+      00000000000000000000000000000000000000000000000000000031F70031F7
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = cmd_batalClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object RLReport1: TRLReport
+    Left = 0
+    Height = 1123
+    Top = 96
+    Width = 794
+    DataSource = DataSource1
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    RealBounds.Left = 0
+    RealBounds.Top = 0
+    RealBounds.Width = 0
+    RealBounds.Height = 0
+    object RLMemo1: TRLMemo
+      Left = 182
+      Height = 16
+      Top = -162
+      Width = 185
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+    end
+    object RLGroup1: TRLGroup
+      Left = 38
+      Height = 128
+      Top = 102
+      Width = 718
+      DataFields = 'tgl_trnsksi'
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RLBand2: TRLBand
+        Left = 0
+        Height = 16
+        Top = 56
+        Width = 718
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        object RLDraw15: TRLDraw
+          Left = 448
+          Height = 56
+          Top = -40
+          Width = 194
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw16: TRLDraw
+          Left = 264
+          Height = 56
+          Top = -40
+          Width = 208
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw17: TRLDraw
+          Left = 121
+          Height = 56
+          Top = -40
+          Width = 168
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw3: TRLDraw
+          Left = 32
+          Height = 56
+          Top = -40
+          Width = 105
+          Angle = 0
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDBText9: TRLDBText
+          Left = 40
+          Height = 16
+          Top = 0
+          Width = 46
+          Alignment = taJustify
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'id_trnsksi'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial Narrow'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText10: TRLDBText
+          Left = 144
+          Height = 16
+          Top = 0
+          Width = 55
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'id_member'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial Narrow'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText11: TRLDBText
+          Left = 584
+          Height = 16
+          Top = 0
+          Width = 43
+          Alignment = taRightJustify
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'total_jual'
+          DataSource = DataSource1
+          DisplayMask = '#,###'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial Narrow'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText12: TRLDBText
+          Left = 296
+          Height = 16
+          Top = 0
+          Width = 73
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'nama_member'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial Narrow'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+      end
+      object RLBand3: TRLBand
+        Left = 0
+        Height = 56
+        Top = 0
+        Width = 718
+        BandType = btHeader
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        object RLDraw8: TRLDraw
+          Left = 32
+          Height = 24
+          Top = 32
+          Width = 136
+          Angle = 0
+          Brush.Color = 12306118
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw9: TRLDraw
+          Left = 136
+          Height = 24
+          Top = 32
+          Width = 184
+          Angle = 0
+          Brush.Color = 12306118
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw10: TRLDraw
+          Left = 288
+          Height = 24
+          Top = 32
+          Width = 232
+          Angle = 0
+          Brush.Color = 12306118
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw11: TRLDraw
+          Left = 471
+          Height = 24
+          Top = 32
+          Width = 171
+          Angle = 0
+          Brush.Color = 12306118
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLLabel2: TRLLabel
+          Left = 34
+          Height = 16
+          Top = 36
+          Width = 96
+          Alignment = taCenter
+          Caption = 'ID TRANSAKSI'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel3: TRLLabel
+          Left = 177
+          Height = 16
+          Top = 36
+          Width = 78
+          Alignment = taCenter
+          Caption = 'ID MEMBER'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel4: TRLLabel
+          Left = 328
+          Height = 16
+          Top = 36
+          Width = 102
+          Alignment = taCenter
+          Caption = 'NAMA MEMBER'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBText16: TRLDBText
+          Left = 112
+          Height = 15
+          Top = 8
+          Width = 60
+          Borders.Sides = sdCustom
+          Borders.DrawLeft = False
+          Borders.DrawTop = False
+          Borders.DrawRight = False
+          Borders.DrawBottom = False
+          DataField = 'tgl_trnsksi'
+          DataSource = DataSource1
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel8: TRLLabel
+          Left = 32
+          Height = 15
+          Top = 8
+          Width = 72
+          Caption = 'TANGGAL   : '
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLLabel5: TRLLabel
+          Left = 512
+          Height = 16
+          Top = 36
+          Width = 96
+          Alignment = taCenter
+          Caption = 'TOTAL TRANS'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+      end
+      object RLBand4: TRLBand
+        Left = 0
+        Height = 40
+        Top = 72
+        Width = 718
+        BandType = btColumnFooter
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+        object RLDraw25: TRLDraw
+          Left = 455
+          Height = 72
+          Top = -56
+          Width = 187
+          Angle = 0
+          Brush.Color = 16763541
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLDraw22: TRLDraw
+          Left = 32
+          Height = 56
+          Top = -40
+          Width = 440
+          Angle = 0
+          Brush.Color = 16763541
+          Color = clWhite
+          ParentColor = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+          Transparent = False
+        end
+        object RLLabel10: TRLLabel
+          Left = 85
+          Height = 16
+          Top = 0
+          Width = 38
+          Alignment = taCenter
+          Caption = 'TOTAL'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial Narrow'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDBResult3: TRLDBResult
+          Left = 552
+          Height = 16
+          Top = 0
+          Width = 75
+          Alignment = taRightJustify
+          DataField = 'total_jual'
+          DataSource = DataSource1
+          DisplayMask = '#,###'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial Narrow'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Info = riSum
+          ParentFont = False
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+        object RLDraw1: TRLDraw
+          Left = 8
+          Height = 7
+          Top = 24
+          Width = 696
+          Angle = 0
+          DrawKind = dkLine
+          RealBounds.Left = 0
+          RealBounds.Top = 0
+          RealBounds.Width = 0
+          RealBounds.Height = 0
+        end
+      end
+    end
+    object RLBand6: TRLBand
+      Left = 38
+      Height = 64
+      Top = 38
+      Width = 718
+      BandType = btTitle
+      RealBounds.Left = 0
+      RealBounds.Top = 0
+      RealBounds.Width = 0
+      RealBounds.Height = 0
+      object RLLabel14: TRLLabel
+        Left = 258
+        Height = 18
+        Top = 8
+        Width = 228
+        Alignment = taCenter
+        Caption = 'LAPORAN JURNAL TRANSAKSI'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -15
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDraw2: TRLDraw
+        Left = -8
+        Height = 7
+        Top = 40
+        Width = 1024
+        Angle = 0
+        DrawKind = dkLine
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+      object RLDraw4: TRLDraw
+        Left = -8
+        Height = 7
+        Top = 36
+        Width = 1024
+        Angle = 0
+        DrawKind = dkLine
+        RealBounds.Left = 0
+        RealBounds.Top = 0
+        RealBounds.Width = 0
+        RealBounds.Height = 0
+      end
+    end
+  end
+  object ZQuery1: TZQuery
+    Connection = Utama.ZConnection1
+    SQL.Strings = (
+      'select tgl_trnsksi, id_trnsksi, total_jual, id_member, nama_member'
+      ' from pemasukan, penjualan where pemasukan.id_trnsksi = penjualan.id_jual'
+    )
+    Params = <>
+    left = 88
+    top = 40
+    object ZQuery1tgl_trnsksi: TDateField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'tgl_trnsksi'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQuery1id_trnsksi: TStringField
+      DisplayWidth = 52
+      FieldKind = fkData
+      FieldName = 'id_trnsksi'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 52
+    end
+    object ZQuery1total_jual: TFloatField
+      FieldKind = fkData
+      FieldName = 'total_jual'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '#,###'
+      MaxValue = 0
+      MinValue = 0
+      Precision = 12
+    end
+    object ZQuery1id_member: TStringField
+      FieldKind = fkData
+      FieldName = 'id_member'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 52
+    end
+    object ZQuery1nama_member: TStringField
+      FieldKind = fkData
+      FieldName = 'nama_member'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 80
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    left = 280
+    top = 40
+  end
+end

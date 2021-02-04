@@ -1,0 +1,848 @@
+object frmBarang: TfrmBarang
+  Left = 351
+  Height = 321
+  Top = 168
+  Width = 828
+  BorderStyle = bsToolWindow
+  Caption = 'Data Barang'
+  ClientHeight = 321
+  ClientWidth = 828
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.6.2.0'
+  object Shape5: TShape
+    Left = 419
+    Height = 209
+    Top = 47
+    Width = 397
+    Brush.Color = clDefault
+    Pen.Color = clBlue
+  end
+  object Shape4: TShape
+    Left = 8
+    Height = 81
+    Top = 187
+    Width = 408
+    Brush.Color = clDefault
+    Pen.Color = clBlue
+  end
+  object Shape1: TShape
+    Left = 8
+    Height = 137
+    Top = 47
+    Width = 408
+    Brush.Color = clDefault
+    Pen.Color = clBlue
+  end
+  object Edit1: TEdit
+    Left = 123
+    Height = 23
+    Top = 56
+    Width = 238
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 13
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Label1: TLabel
+    Left = 41
+    Height = 15
+    Top = 64
+    Width = 72
+    Caption = 'Kode Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 67
+    Height = 15
+    Top = 88
+    Width = 46
+    Caption = 'Barcode'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 36
+    Height = 15
+    Top = 112
+    Width = 77
+    Caption = 'Nama Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 74
+    Height = 15
+    Top = 160
+    Width = 39
+    Caption = 'Satuan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 451
+    Height = 15
+    Top = 63
+    Width = 58
+    Caption = 'Harga Beli'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 439
+    Height = 15
+    Top = 87
+    Width = 70
+    Caption = 'Harga Jual 1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 123
+    Height = 23
+    Top = 80
+    Width = 272
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 35
+    OnChange = Edit2Change
+    ParentFont = False
+    TabOrder = 1
+    Text = 'edit2'
+  end
+  object Edit3: TEdit
+    Left = 123
+    Height = 23
+    Top = 104
+    Width = 272
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 50
+    OnChange = Edit3Change
+    ParentFont = False
+    TabOrder = 2
+    Text = 'edit3'
+  end
+  object Edit4: TEdit
+    Left = 519
+    Height = 23
+    Top = 55
+    Width = 272
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    NumbersOnly = True
+    OnChange = Edit4Change
+    ParentFont = False
+    TabOrder = 8
+    Text = 'Edit4'
+  end
+  object Edit5: TEdit
+    Left = 604
+    Height = 23
+    Top = 79
+    Width = 187
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 9764864
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    NumbersOnly = True
+    OnChange = Edit5Change
+    ParentFont = False
+    TabOrder = 9
+    Text = 'Edit5'
+  end
+  object ComboBox1: TComboBox
+    Left = 123
+    Height = 23
+    Top = 152
+    Width = 93
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 15
+    MaxLength = 10
+    ParentFont = False
+    TabOrder = 4
+    Text = 'combobox1'
+  end
+  object Shape2: TShape
+    Left = 0
+    Height = 40
+    Top = 280
+    Width = 832
+    Brush.Color = clDefault
+    Pen.Color = clGray
+  end
+  object Button3: TButton
+    Left = 363
+    Height = 25
+    Top = 54
+    Width = 32
+    Caption = '...'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 18
+  end
+  object Shape3: TShape
+    Left = -28
+    Height = 40
+    Top = -1
+    Width = 864
+    Brush.Color = 16777166
+    Pen.Color = clSilver
+  end
+  object Label7: TLabel
+    Left = 288
+    Height = 19
+    Top = 8
+    Width = 245
+    Caption = 'MASTER DATA BARANG'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -16
+    Font.Name = 'Engravers MT'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit6: TEdit
+    Left = 519
+    Height = 23
+    Top = 224
+    Width = 105
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 5
+    OnChange = Edit5Change
+    OnEnter = Edit6Enter
+    OnExit = Edit6Exit
+    OnKeyPress = Edit6KeyPress
+    ParentFont = False
+    TabOrder = 15
+    Text = 'Edit6'
+  end
+  object Label8: TLabel
+    Left = 429
+    Height = 15
+    Top = 232
+    Width = 80
+    Caption = 'Stok Sekarang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit7: TEdit
+    Left = 604
+    Height = 23
+    Top = 103
+    Width = 187
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 9764864
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnChange = Edit7Change
+    OnKeyPress = Edit6KeyPress
+    ParentFont = False
+    TabOrder = 10
+    Text = 'Edit7'
+  end
+  object Label9: TLabel
+    Left = 442
+    Height = 15
+    Top = 111
+    Width = 67
+    Caption = 'Harga jual 2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit8: TEdit
+    Left = 604
+    Height = 23
+    Top = 127
+    Width = 187
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 9764864
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnChange = Edit8Change
+    OnKeyPress = Edit6KeyPress
+    ParentFont = False
+    TabOrder = 11
+    Text = 'Edit8'
+  end
+  object Edit9: TEdit
+    Left = 604
+    Height = 23
+    Top = 151
+    Width = 187
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 9764864
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnChange = Edit9Change
+    OnKeyPress = Edit6KeyPress
+    ParentFont = False
+    TabOrder = 12
+    Text = 'Edit9'
+  end
+  object Label10: TLabel
+    Left = 442
+    Height = 15
+    Top = 135
+    Width = 67
+    Caption = 'Harga jual 3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 442
+    Height = 15
+    Top = 159
+    Width = 67
+    Caption = 'Harga jual 4'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 67
+    Height = 15
+    Top = 136
+    Width = 46
+    Caption = 'Kategori'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit10: TEdit
+    Left = 123
+    Height = 23
+    Top = 128
+    Width = 272
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 20
+    OnChange = Edit10Change
+    ParentFont = False
+    TabOrder = 3
+    Text = 'EDIT10'
+  end
+  object Spin1: TFloatSpinEdit
+    Left = 519
+    Height = 23
+    Top = 79
+    Width = 64
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Increment = 1
+    MaxValue = 100
+    MinValue = 0
+    OnChange = Spin1Change
+    ParentFont = False
+    TabOrder = 19
+    Value = 5
+  end
+  object Spin2: TFloatSpinEdit
+    Left = 519
+    Height = 23
+    Top = 103
+    Width = 64
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Increment = 1
+    MaxValue = 100
+    MinValue = 0
+    OnChange = Spin2Change
+    ParentFont = False
+    TabOrder = 20
+    Value = 10
+  end
+  object Spin3: TFloatSpinEdit
+    Left = 519
+    Height = 23
+    Top = 127
+    Width = 64
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Increment = 1
+    MaxValue = 100
+    MinValue = 0
+    OnChange = Spin3Change
+    ParentFont = False
+    TabOrder = 21
+    Value = 15
+  end
+  object Spin4: TFloatSpinEdit
+    Left = 519
+    Height = 23
+    Top = 151
+    Width = 64
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Increment = 1
+    MaxValue = 100
+    MinValue = 0
+    OnChange = Spin4Change
+    ParentFont = False
+    TabOrder = 22
+    Value = 20
+  end
+  object Label13: TLabel
+    Left = 585
+    Height = 15
+    Top = 85
+    Width = 11
+    Caption = '%'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label14: TLabel
+    Left = 585
+    Height = 15
+    Top = 109
+    Width = 11
+    Caption = '%'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label15: TLabel
+    Left = 585
+    Height = 15
+    Top = 133
+    Width = 11
+    Caption = '%'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label16: TLabel
+    Left = 585
+    Height = 15
+    Top = 157
+    Width = 11
+    Caption = '%'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object cmd_batal: TBitBtn
+    Left = 688
+    Height = 25
+    Top = 288
+    Width = 96
+    Caption = '&Cancel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000031DE0031DE0000000031DE0031DE00000000000000000000000000
+      00000000000000000000000000000000000031DE0031DE0000000000000031DE
+      0031DE0031DE0000000000000000000000000000000000000000000000000031
+      DE0031DE0000000000000000000031DE0031DE0031DE0031DE00000000000000
+      00000000000000000000000031DE0031DE000000000000000000000000000000
+      0031EF0031DE0031DE0031DE0000000000000000000000000031DE0031DE0000
+      000000000000000000000000000000000000000000000031DE0031DE0031DE00
+      00000031DE0031DE0031DE000000000000000000000000000000000000000000
+      0000000000000000000031DE0031E70031E70031E70031DE0000000000000000
+      000000000000000000000000000000000000000000000000000000000031E700
+      31E70031EF000000000000000000000000000000000000000000000000000000
+      0000000000000000000031DE0031EF0031E70031EF0031F70000000000000000
+      000000000000000000000000000000000000000000000031F70031EF0031E700
+      00000000000031F70031F7000000000000000000000000000000000000000000
+      0000000031FF0031EF0031F70000000000000000000000000031FF0031F70000
+      000000000000000000000000000000000031F70031F70031FF00000000000000
+      00000000000000000000000031F70031F70000000000000000000000000031F7
+      0031F70031F70000000000000000000000000000000000000000000000000000
+      000031F70000000000000031F70031F70031F700000000000000000000000000
+      00000000000000000000000000000000000000000000000000000031F70031F7
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = cmd_batalClick
+    ParentFont = False
+    TabOrder = 17
+  end
+  object cmd_simpan: TBitBtn
+    Left = 584
+    Height = 25
+    Hint = 'Simpan data barang'
+    Top = 288
+    Width = 96
+    Caption = '&OK'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000064000000640000000000000000000000000000000000
+      00000000000000000052A54A0094086BB5630000000000000000000000000000
+      0000000000000000000000000000000000000000000000000018B52900BD2100
+      94008CBD7B000000000000000000000000000000000000000000000000000000
+      0000000000006BB56300BD2100C62900A500319C310000000000000000000000
+      00000000000000000000000000000000000000000000009C1000CE3100C62900
+      AD10009400A5C694000000000000000000000000000000000000000000000000
+      00000052A54A00CE3100C62900FF6300CE31009C00008C000000000000000000
+      0000000000000000000000000000000000000018B52929CE5A00FF6300FF6300
+      BD2100C6290094008CBD7B000000000000000000000000000000000000000000
+      00000018C64200FF6300FF6352A54A52A54A00C62900A500319C310000000000
+      0000000000000000000000000000000000000000000000AD2100AD2100000000
+      000000AD1800C629009400A5C694000000000000000000000000000000000000
+      00000000000000000000000000000000000031B54200C629009C00008C000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000B52100C6290094008CBD7B000000000000000000000000000000
+      00000000000000000000000000000000000000000052A54A00C62929AD3931B5
+      4200000000000000000000000000000000000000000000000000000000000000
+      000000000000000029AD4A5AE7A529AD398CBD7B000000000000000000000000
+      00000000000000000000000000000000000000000000000031B54200D6428CBD
+      7B00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000A5C694000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000
+    }
+    OnClick = cmd_simpanClick
+    ParentFont = False
+    TabOrder = 16
+  end
+  object Edit11: TEdit
+    Left = 123
+    Height = 23
+    Top = 192
+    Width = 93
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 20
+    NumbersOnly = True
+    OnChange = Edit10Change
+    OnEnter = Edit11Enter
+    OnExit = Edit11Exit
+    ParentFont = False
+    TabOrder = 5
+    Text = 'Edit11'
+  end
+  object Label17: TLabel
+    Left = 43
+    Height = 15
+    Top = 200
+    Width = 70
+    Caption = 'Isi Kemasan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button6: TButton
+    Left = 363
+    Height = 25
+    Top = 240
+    Width = 32
+    Caption = '...'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button6Click
+    ParentFont = False
+    TabOrder = 23
+  end
+  object Edit12: TEdit
+    Left = 123
+    Height = 23
+    Top = 240
+    Width = 238
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxLength = 13
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 7
+    Text = 'Edit12'
+  end
+  object Label18: TLabel
+    Left = 22
+    Height = 15
+    Top = 248
+    Width = 91
+    Caption = 'Kode Barang Up'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBox2: TComboBox
+    Left = 123
+    Height = 23
+    Top = 216
+    Width = 93
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 15
+    MaxLength = 10
+    ParentFont = False
+    TabOrder = 6
+    Text = 'ComboBox2'
+  end
+  object Label19: TLabel
+    Left = 58
+    Height = 15
+    Top = 225
+    Width = 55
+    Caption = 'Satuan Isi'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit13: TEdit
+    Left = 520
+    Height = 23
+    Top = 200
+    Width = 104
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 9764864
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnChange = Edit9Change
+    OnKeyPress = Edit6KeyPress
+    ParentFont = False
+    TabOrder = 14
+    Text = 'Edit13'
+  end
+  object Label20: TLabel
+    Left = 487
+    Height = 15
+    Top = 208
+    Width = 22
+    Caption = 'Rak'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label21: TLabel
+    Left = 452
+    Height = 15
+    Top = 184
+    Width = 57
+    Caption = 'Distributor'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBox3: TComboBox
+    Left = 519
+    Height = 23
+    Top = 176
+    Width = 272
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 15
+    MaxLength = 10
+    ParentFont = False
+    TabOrder = 13
+    Text = 'ComboBox3'
+  end
+  object Edit14: TEdit
+    Left = 708
+    Height = 23
+    Top = 224
+    Width = 83
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 7
+    OnChange = Edit5Change
+    OnEnter = Edit14Enter
+    OnExit = Edit14Exit
+    OnKeyPress = Edit14KeyPress
+    ParentFont = False
+    TabOrder = 24
+    Text = 'Edit14'
+  end
+  object Label22: TLabel
+    Left = 640
+    Height = 15
+    Top = 232
+    Width = 62
+    Caption = 'Stok di Rak'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end
